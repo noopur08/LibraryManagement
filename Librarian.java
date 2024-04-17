@@ -12,6 +12,9 @@ public class Librarian extends LibraryManagement {
 
     public Librarian(String name, int employeeID, int maxBooks, int maxInventory, int maxBorrowers, int maxSearchHistory, int maxCatalogue) {
         super(name, employeeID);
+        if(maxBooks>maxInventory) {
+            throw new IllegalArgumentException("Max books cannot be greater than max inventory");
+        }
         issuedBooks = new Book[maxBooks];
         libraryInventory = new Book[maxInventory];
         borrowers = new Borrower[maxBorrowers];
