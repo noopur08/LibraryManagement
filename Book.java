@@ -7,6 +7,13 @@ public class Book {
     private boolean reserved;
 
     public Book(String title, String author, int publicationYear, int ISBN) {
+        if(title == null || author == null) {
+            throw new IllegalArgumentException("Title and author cannot be null");
+        }
+
+        if (publicationYear > Calendar.getInstance().get(Calendar.YEAR)) {
+            throw new IllegalArgumentException("Publication year cannot be in the future");
+        }
         this.title = title;
         this.author = author;
         this.publicationYear = publicationYear;
