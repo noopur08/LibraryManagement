@@ -14,10 +14,6 @@ public class Administrator{
         this.canViewStatistics = true;
     }
 
-    public void addMember(String memberType, String username, String password) {
-        
-    }
-
     public String getUsername() {
         return username;
     }
