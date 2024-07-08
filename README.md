@@ -1,2 +1,2 @@
 # LibraryManagement
-Made a Library Management System as a part of my Object Oriented Programming Course
+Designed and implemented a comprehensive library management system utilizing object-oriented programming principles. 
